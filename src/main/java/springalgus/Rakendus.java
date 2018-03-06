@@ -16,19 +16,15 @@ public class Rakendus {
     String tervitus2(String eesnimi){
         return "Tere, "+eesnimi;
     }
+		//localhost:5556/tervitus?eesnimi=robin
 
-<<<<<<< HEAD
-	@RequestMapping("/korrutus")
- 	int korrutamine(int arv1, int arv2){
- 		return arv1*arv2;
- 	}
-=======
+
  	@RequestMapping("/korrutus")
-	int korrutamine(int arv1, int arv2){
+		int korrutamine(int arv1, int arv2){
 		return arv1*arv2;
 	}
+	//localhost:5556/korrutus?arv1=4&arv2=7
 
->>>>>>> b72c84c0573027aa5d64b93da64190899ac0cd91
     public static void main(String[] args) {
 		//System.getProperties().put("server.port", 40305);
         SpringApplication.run(Rakendus.class, args);
