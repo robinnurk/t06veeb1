@@ -20,7 +20,7 @@ public class Rakendus {
     }
 		//localhost:5556/tervitus?eesnimi=robin
 
-	@RequestMapping("/korrutus/(arv1)/(arv2)")
+	@RequestMapping("/korrutus/{arv1}/{arv2}")
 	String korrutamine(@PathVariable String arv1, @PathVariable String arv2){
 		if(arv1==null){return "esimene arv puudub";}
 		int vastus=Integer.parseInt(arv1)*Integer.parseInt(arv2);
